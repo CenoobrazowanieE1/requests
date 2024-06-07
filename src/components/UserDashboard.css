@@ -1,0 +1,117 @@
+/* UserDashboard.css */
+.menu-container {
+  position: relative;
+}
+
+.menu-button {
+  padding-top: 7px;
+  background-color: transparent;
+  fill: var(--color-primary-dark);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: var(--color-secondary-dark);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+  color: var(--color-secondary-light);
+  transition: background-color 0.3s ease;
+}
+
+.menu-button .icons {
+  fill: var(--color-primary-light);
+  transition: background-color 0.3s ease;
+}
+.menu-button:hover .icons {
+  fill: var(--color-primary-light);
+  transition: background-color 0.3s ease;
+}
+
+.menu-options {
+  position: absolute;
+  top: 120%;
+  left: 0%;
+  background-color: var(--color-background);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+.menu-option {
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: var(--color-secondary-dark);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.menu-option:hover {
+  background-color: var(--color-text-light);
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.menu-option:hover .icons {
+  fill: var(--color-text-dark);
+  transition: 0.3s ease;
+}
+
+.icons {
+  color: #aaa;
+  transition: 0.3s ease;
+}
+
+.block-info {
+  margin-right: auto;
+  display: flex;
+}
+
+.user-dashboard-container {
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-primary-light);
+}
+
+.header-users {
+  width: 100%;
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  padding: 3px 15px;
+  gap: 7px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.sign-out-button,
+.create-request-button,
+.view-products-button {
+  padding: 10px;
+  background-color: var(--color-primary-light);
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-out-button:hover,
+.create-request-button:hover,
+.view-products-button:hover {
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary-dark);
+}

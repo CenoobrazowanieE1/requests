@@ -1,0 +1,25 @@
+.floating-message {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-error);
+  color: var(--color-text-light);
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1200;
+  animation: slideIn 0.5s ease forwards, fadeOut 0.5s ease 2.5s forwards;
+}
+
+.floating-message.success {
+  background-color: green;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

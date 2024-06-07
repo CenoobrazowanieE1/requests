@@ -1,0 +1,122 @@
+.products-table-container {
+  width: 100%;
+  margin: 8px 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #333;
+  font-size: 14px;
+}
+
+.products-table th,
+.products-table td {
+  border: 1px solid #f3f2f2;
+  padding: 8px;
+  text-align: left;
+}
+
+.products-table th {
+  background-color: #f1f1f1;
+  font-size: 14px;
+}
+
+.products-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.products-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.products-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.column-filter-input {
+  font-size: 12px;
+  max-width: 300px;
+}
+
+.multi-select-filter {
+  font-size: 13px;
+  width: 100%;
+  padding: 2px;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: var(--color-secondary-light);
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: var(--color-primary-light);
+  border: none;
+}
+
+.pagination button:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.pagination input {
+  margin-left: 5px;
+  width: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.pagination select {
+  margin-left: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.input-products-search {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+}

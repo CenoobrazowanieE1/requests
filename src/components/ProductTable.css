@@ -1,0 +1,134 @@
+.product-table {
+  width: 100%;
+  max-height: 60vh;
+  border-collapse: collapse;
+  font-size: 13px;
+  overflow-y: auto;
+}
+
+.table-controls-product {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.table-controls-product .custom-checkbox {
+  margin: 0;
+  font-size: 13px;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid var(--color-border);
+  padding: 5px;
+}
+
+.product-table td link {
+  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-table th {
+  font-weight: 600;
+  background-color: var(--color-primary-light);
+  color: var(--color-secondary-dark);
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.product-table tr:nth-child(even) {
+  background-color: var(--color-secondary-light);
+}
+
+.product-table tr:hover {
+  background-color: var(--color-input-bg);
+}
+
+.product-table td[contenteditable="true"] {
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  word-break: break-word;
+}
+
+.product-table td.error {
+  border: 1px solid var(--color-error);
+  background-color: #ffe6e6;
+}
+
+.product-table button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-table button:hover {
+  background-color: #ddd;
+}
+
+.link-icon {
+  cursor: pointer;
+  color: var(--color-highlight-light);
+}
+
+.link-icon:hover {
+  color: var(--color-highlight-dark);
+}
+
+.product-table td.link-cell {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.product-table td.link-cell[contenteditable="true"] {
+  max-width: 150px;
+}
+
+.status-dropdown {
+  font-size: 13px;
+}
+
+.action-icons {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.action-icons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: var(--color-primary-light);
+  color: var(--color-secondary-dark);
+  transition: background-color 0.3s ease;
+}
+.action-icons button:hover {
+  background-color: var(--color-background);
+}
+
+.button-product-edit:hover {
+  color: var(--color-highlight-dark);
+}
+.button-product-delete:hover {
+  color: var(--color-error);
+}
+.button-product-save:hover {
+  color: var(--color-success);
+}
+.button-product-cancel:hover {
+  color: var(--color-secondary-dark);
+}

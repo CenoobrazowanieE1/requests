@@ -1,0 +1,50 @@
+:root {
+  --color-primary-dark: #212529;
+  --color-primary-light: #e9ecef;
+  --color-secondary-dark: #5a5a5a;
+  --color-secondary-light: #f9f9f9;
+  --color-background: #ffffff;
+  --color-border: #ddd;
+  --color-text-dark: #333;
+  --color-text-light: #f1f1f1;
+  --color-highlight-dark: #1c7ed6;
+  --color-highlight-light: #3190e4;
+  --color-error: #fa5252;
+  --color-success: #41b06e;
+  --color-tooltip-bg: #333;
+  --color-tooltip-text: #fff;
+  --color-input-bg: #e8f0fe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* App.css */
+.App {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--color-primary-light);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.App::-webkit-scrollbar {
+  width: 15px;
+}
+
+.App::-webkit-scrollbar-track {
+  background: var(--color-secondary-light);
+  border-radius: 10px;
+}
+
+.App::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-dark);
+  border-radius: 10px;
+  border: 3px solid var(--color-secondary-light);
+}
+
+.App::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-secondary-dark);
+}

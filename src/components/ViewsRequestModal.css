@@ -1,0 +1,130 @@
+.views-modal-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-background);
+  box-shadow: 10px 4px 18px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 50%;
+  max-width: 50%;
+  max-height: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 1000;
+  animation: slideInLeft 0.5s ease forwards;
+}
+
+.views-modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.views-modal-header h2 {
+  margin: 0;
+}
+
+.views-modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.views-modal-info p {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+}
+
+.views-modal-close {
+  padding: 10px;
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.views-modal-close:hover {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-primary-light);
+}
+
+.views-mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  color: var(--color-text-dark);
+  overflow-y: scroll;
+}
+
+.views-mini-table th,
+.views-mini-table td {
+  border: 1px solid var(--color-border);
+  padding: 8px;
+}
+
+.views-mini-table th {
+  background-color: var(--color-text-light);
+}
+
+.views-documents {
+  margin-top: 20px;
+}
+
+.views-documents h3 {
+  margin-bottom: 10px;
+}
+
+.views-documents ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.views-documents li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.download-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  color: var(--color-primary-dark);
+}
+
+.download-icon:hover {
+  color: var(--color-highlight-dark);
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+
+/* Добавление классов для открытия и закрытия модального окна */
+.views-modal-open {
+  animation: slideInLeft 0.5s ease forwards;
+}
+
+.views-modal-close-animation {
+  animation: slideOutLeft 0.5s ease forwards;
+}
